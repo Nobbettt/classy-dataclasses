@@ -1,0 +1,51 @@
+# ========================== #
+#      Project Metadata      #
+# ========================== #
+
+[tool.poetry]
+name = "classy-dataclasses"
+version = "1.0.0"
+license = "MIT"
+keywords = ["dataclass", "serializable", "deserializable", "static class variables", "copyable", "JSON", "nested", "resetable", "flexible", "encode", "decode", "classy"]
+description = "Superset of python dataclasses with additional features."
+authors = ["Norbert Laszlo <hello@norbert.laszlo.com>"]
+readme = "README.txt"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+homepage = "https://github.com/Nobbettt/classydataclass"
+repository = "https://github.com/Nobbettt/classydataclass"
+documentation = "https://github.com/Nobbettt/classydataclass"
+
+
+# ========================== #
+#        Build System        #
+# ========================== #
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+# ========================== #
+#      [tool.*] Sections     #
+# ========================== #
+
+[tool.poetry.urls]
+"Issues" = "https://github.com/Nobbettt/classydataclass/issues"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "8.3.4"
+black = "24.10.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+pytest = "^8.3.4"
+
+[tool.poetry.scripts]
+lint = "scripts:lint"
