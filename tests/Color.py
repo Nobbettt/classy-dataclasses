@@ -25,9 +25,7 @@ class RGB(ClassyDataclass):
     @property
     def is_valid(self) -> bool:
         parts: list[int] = [self.r, self.g, self.b]
-        if all([True if p >= 0 and p <= 255 else False for p in parts]):
-            return True
-        return False
+        return all([True if p >= 0 and p <= 255 else False for p in parts])
 
 
 @dataclass
