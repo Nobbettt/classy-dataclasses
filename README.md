@@ -130,6 +130,27 @@ Note, setting **serialize_fields=False** will convert the dataclass to a diction
 
 Contributions are welcome! If you have suggestions for improvements or new features, feel free to open an issue or submit a pull request.
 
+### Getting started locally
+
+This project uses [Poetry](https://python-poetry.org/) for dependency management
+and packaging. To set up a development environment:
+
+1. Clone the repository and navigate into the project directory.
+2. Install the dependencies with:
+
+   ```bash
+   poetry install
+   ```
+
+   This creates a virtual environment and installs all required packages.
+3. Run the tests to ensure everything works:
+
+   ```bash
+   poetry run pytest
+   ```
+
+You can also start a shell within the Poetry environment using `poetry shell`.
+
 ## License 📃
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
